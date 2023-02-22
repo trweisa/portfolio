@@ -1,0 +1,33 @@
+.header {
+    background-color: rgb(12, 110, 69);
+    overflow: hidden;
+  }
+
+.header-title {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header-item {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 30px;
+  }
+
+  .header-item:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .header-item.active {
+    background-color: #84918c;
+    color: white;
+  }
