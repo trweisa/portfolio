@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
 function Header() {
+  const [selected, setSelected] = useState<number>(0);
+  const handleClick = (divNum: number) => () => {
+    setSelected(divNum);
+  };
+
   return (
     <div className="header">
-      <h1 className="header-title">Tom Weisansal</h1>
-      <Link to="/" className="header-item">
-        Home
-      </Link>
-      <Link to="/projects" className="header-item">
-        Projects
-      </Link>
-      <Link to="/about" className="header-item">
-        About
-      </Link>
+      <div className="links">
+        <Link
+          to="/"
+          className="header-item"
+          id={selected === 1 ? "active" : ""}
+          onClick={handleClick(1)}
+        >
+          About
+        </Link>
+        <Link
+          to="/projects"
+          className="header-item"
+          id={selected === 2 ? "active" : ""}
+          onClick={handleClick(2)}
+        >
+          Projects
+        </Link>
+      </div>
     </div>
   );
 }
