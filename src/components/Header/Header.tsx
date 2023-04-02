@@ -49,13 +49,21 @@ function Header() {
                 id={selected === 1 ? "active" : ""}
                 onClick={handleClick(1)}
               >
+                HOME
+              </Link>
+              <Link
+                to="/about"
+                className="header-item"
+                id={selected === 2 ? "active" : ""}
+                onClick={handleClick(2)}
+              >
                 ABOUT
               </Link>
               <Link
                 to="/projects"
                 className="header-item"
-                id={selected === 2 ? "active" : ""}
-                onClick={handleClick(2)}
+                id={selected === 3 ? "active" : ""}
+                onClick={handleClick(3)}
               >
                 PROJECTS
               </Link>
@@ -73,13 +81,21 @@ function Header() {
                 id={selected === 1 ? "active" : ""}
                 onClick={handleClick(1)}
               >
+                HOME
+              </Link>
+              <Link
+                to="/about"
+                className="header-item"
+                id={selected === 2 ? "active" : ""}
+                onClick={handleClick(2)}
+              >
                 ABOUT
               </Link>
               <Link
                 to="/projects"
                 className="header-item"
-                id={selected === 2 ? "active" : ""}
-                onClick={handleClick(2)}
+                id={selected === 3 ? "active" : ""}
+                onClick={handleClick(3)}
               >
                 PROJECTS
               </Link>

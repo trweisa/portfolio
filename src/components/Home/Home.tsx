@@ -1,20 +1,15 @@
 import React from "react";
 
-function About() {
+function Home() {
   return (
     <>
       <span>Hi! I'm Tom, welcome to my page.</span>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        I'm a full stack developer with a focus in React and .net/C#.  
+        When I'm not actively coding you can find me plucking a guitar, gaming, and rock climbing.
       </p>
     </>
   );
 }
 
-export default About;
+export default Home;
