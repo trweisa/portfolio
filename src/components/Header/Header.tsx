@@ -73,12 +73,11 @@ function Header() {
       </div>
       {
         navbarOpen ? (
-          <div>
+          <div className="mobile-nav-bar">
             <div className="nav-buttons">
               <Link
                 to="/"
                 className="header-item"
-                id={selected === 1 ? "active" : ""}
                 onClick={handleClick(1)}
               >
                 HOME
@@ -86,7 +85,6 @@ function Header() {
               <Link
                 to="/about"
                 className="header-item"
-                id={selected === 2 ? "active" : ""}
                 onClick={handleClick(2)}
               >
                 ABOUT
@@ -94,7 +92,6 @@ function Header() {
               <Link
                 to="/projects"
                 className="header-item"
-                id={selected === 3 ? "active" : ""}
                 onClick={handleClick(3)}
               >
                 PROJECTS
