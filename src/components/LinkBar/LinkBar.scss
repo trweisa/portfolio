@@ -1,0 +1,19 @@
+.linkbar-container {
+    background-color: lightgrey;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.linkbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.icon-link {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
